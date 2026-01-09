@@ -4,50 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+            .ciao::marker{font-size: 1.5em;font-weight: bold;}
+        </style>
 </head>
 <body>
     
     <!--prima parte-->
-    <header id="titolo_argomento">
+    <header>
         <h1>Una giornata al museo</h1>
     </header>
 
-    <!--seconda parte-->
-    <header id="primo_sottotitolo">
+    <header>
 
         <ol>
-            <li style="font-weight:bold;list-style-type: ;">
-            
-                <h2>Il dipinto che mi ha colpito di più</h2>
-            
-                <img src="./img/quadro.png" alt="immagine quadro"/>
-                <p>un' opera d'arte affascinante vista nella galleria princiale</p>
-
+            <li class="ciao">
+                <section> <!--sezione-->
+                    <h2>Il dipinto che mi ha colpito di più</h2>
+                    <div>
+                        <img src="./img/quadro.png" alt="quadro">
+                        <figcaption>Un'opera d'arte vista nella galleria principale.</figcaption> <!--didascalia immagine-->
+                    </div>
+                    <p style="margin-left:-40px">Questo dipinto mi ha catturato per i suoi colori intensi e per l'espressione del volto del suo personaggio.
+                        E' come se raccontasse...</p> <!--ho utilizzato il css per avvicinare ai bordi le scritte-->
+                </section>
             </li>
-         </ol>
-         <p>Qusto dipinto mi ha catturato per X motivi</p>
+            <li class="ciao">
+                <section>
+                    <h2>Un'antica scultura</h2>
+                    <div>
+                        <img src="./img/scultura.png" alt="scultura">
+                        <figcaption>Struttura romana in marmo esposta nella sala archeologica.</figcaption>
+                    </div>
+                    <p style="margin-left:-40px">La scultura era alta quasi due metri e mostrava un antico guerriero romano.
+                        I dettagli del viso e dell'armatura erano incredibilmente realistici.</p>
+                </section>
+            </li>
+        </ol>
 
     </header>
 
-    <!--terza parte-->
-    <header id="secondo_sottotitolo">
-        
-        <ol>
-            <li>
-                <h2>aaaaaaa scultura</h2>
-
-                <img src="./img/scultura.png" alt="immagine scultura"/>
-                <p>Scultura romana in marmo esposta nella sala archeologica</p>
-
-            </li>
-        
-         </ol>
-         <p>La scultura era alta quasi 2 metri ecc.. ecc..</p>
-
-    </header>
-
-   <!--quarta parte-->
-    <header id="cose_imparati">
+   <!--seconda parte-->
+    <header>
         <h3>Le cose che ho imparato oggi</h3>
         <ul>
             <li>Le statue romane venivano spesso dipinte a colori vivaci</li>
@@ -56,31 +54,9 @@
         </ul>
     </header>
 
-    <!--quinta parte-->
-    <header id="fine">
+    <!--terza parte-->
+    <footer>
         <p>&copy; 2025 insegnante di HTML</p>
-    </header>
-
-
-
-    <!--seconda parte-->
-    <header id="sottotitoli" >
-        <ol>
-            <li>
-                 <h2>Una giornata al museo</h2>
-            <img src="./quadro.png" alt="immagine quadro"/>
-                <p>un' opera d'arte affascinante vista nella galleria princiale</p>
-
-            </li>
-         <p>Qusto dipinto mi ha catturato per X motivi</p>
-            <li><h2>Un antica scultura</h2></li>
-
-
-
-        </ol>
-
-
-    </header>
-
+    </footer>
 </body>
 </html>
